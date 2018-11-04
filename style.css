@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo|Krub|Muli|Quicksand');
+
+body {
+    margin: 0 0 0 0;
+    background-color: aliceblue;
+    font-family: Muli, sans-serif, monospace;
+}
+
+h1 {
+    margin: 0 0 0 0;
+}
+
+.list {
+    margin: 0 200px 0 180px;
+}
+
+ul {
+    margin: 0 0 0 0;
+}
+
+li {
+    text-align: center;
+    list-style-type: none;
+    border: 2px solid gray;
+    border-left-width: 20px;
+    margin: 0 160px 20px 150px;
+    padding: 10px 0 10px 0;
+    font-size: 35px;
+
+}
+
+.passed {
+    border-color: cadetblue;
+}
+
+.not-passed {
+    border-color: orange;
+}
+
+.future {
+    border-color: cornflowerblue;
+}
+
+a {
+
+    color: cornflowerblue;
+    padding-left: -20px;
+
+}
+
+a:hover {
+    color: blue;
+    font-size: 34px;
+}
+
+
+.header-wrapper {
+    text-align: center;
+    font-size: 150%;
+    color: whitesmoke;
+    background-color: cornflowerblue;
+    padding: 30px 0 30px 0;
+}
+
+.main-wrapper {
+    background-color: #e7ecf3;
+    margin: 20px 20px 0 20px;
+    padding: 20px 0 0 0;
+    border: 1px solid #d3ac68;
+}
