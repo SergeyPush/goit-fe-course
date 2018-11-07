@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 900px;
+    background-color: beige;
+    margin: 0 auto;
+}
+
+.container {
+    border: 1px solid red;
+}
+
+
+.navigation li{
+    display: inline-block;
+    border: 1px solid yellow;
+
+}
