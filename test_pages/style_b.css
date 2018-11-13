@@ -1,0 +1,12 @@
+:root {
+    --red: red;
+    --beige: beige;
+}
+
+
+.container {
+    background: var(--beige);
+    width: 100%;
+    display: flex;
+    border: 2px solid #ffcc5c;
+}
