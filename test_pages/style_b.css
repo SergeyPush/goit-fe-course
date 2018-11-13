@@ -4,9 +4,86 @@
 }
 
 
-.container {
-    background: var(--beige);
-    width: 100%;
+body {
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+    height: 85vh;
+}
+
+
+.header-wrapper {
+    height: 80px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: cornflowerblue;
     display: flex;
-    border: 2px solid #ffcc5c;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    font-size: 2em;
+    /*    flex: 1;*/
+
+}
+
+.nav {
+    /*    margin-top: auto;*/
+}
+
+.nav > a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1em;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    border: 1px dotted black;
+}
+
+
+
+div.item {
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid gray;
+    border-left-width: 20px;
+    padding: 10px 0 10px 0;
+    font-size: 25px;
+    width: 370px;
+    margin: 0 auto 10px auto;
+
+}
+
+div.passed {
+    border-color: cadetblue;
+}
+
+div.not-passed {
+    border-color: orange;
+}
+
+div.future {
+    border-color: cornflowerblue;
+}
+
+.container a {
+    color: cornflowerblue;
+}
+
+.container a:hover {
+    color: blue;
+    font-size: 24px;
+}
+
+div.item:hover {
+    opacity: .8;
 }
