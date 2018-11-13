@@ -21,7 +21,7 @@ img {
 
 /*        Menu styles            */
 nav.menu {
-    padding: 70px 165px 70px 165px;
+    padding: 74px 165px 98px 165px;
 }
 
 ul.navigation {
@@ -51,7 +51,6 @@ a:hover {
 }
 
 
-
 /*         Article styles         */
 
 div.article {
@@ -69,12 +68,14 @@ article > h3 {
     color: #b4ad9e;
     font-family: "Ubuntu";
     font-weight: 300;
+    padding: 14px 0 0 0;
 }
 
 article > h2 {
     font-size: 30px;
     color: #626262;
     font-family: "Playfair Display";
+    margin-top: 21px;
 }
 
 article > p {
@@ -82,10 +83,11 @@ article > p {
     line-height: 24px;
     color: #626262;
     font-family: "Playfair Display";
+    margin-top: 30px;
 }
 
-.row3 {
-    margin-bottom: 40px;
+div.row {
+    margin-bottom: 108px;
 }
 
 div.button {
@@ -97,6 +99,7 @@ div.button {
     width: 165px;
     height: 60px;
     margin: 0 auto;
+    margin-top: -64px;
     text-align: center;
 }
 
