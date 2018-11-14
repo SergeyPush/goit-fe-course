@@ -11,6 +11,9 @@ body {
     box-sizing: border-box;
 
 }
+*{
+    box-sizing: inherit;
+}
 
 
 .header-wrapper {
@@ -44,25 +47,32 @@ body {
     color: azure;
 }
 
+.items-container{
+    width: 75%;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    width: 35%;
     height: 100%;
     margin: 0 auto;
-    padding: 20px 0 0 0;
+
 }
 
-
-div.item {
-    box-sizing: border-box;
+.item {
     text-align: center;
     border: 2px solid gray;
     border-left-width: 20px;
     padding: 13px 0;
     font-size: 2em;
-    width: 40%;
-    margin: 0 auto 10px auto;
+/*    width: 40%;*/
+/*    margin: 0 auto 10px auto;*/
 
 }
 
