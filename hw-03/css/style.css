@@ -6,11 +6,13 @@ html {
     box-sizing: inherit;
 }
 
+/*
 img {
     display: block;
     width: 100%;
     height: auto;
 }
+*/
 
 /*        Container styles       */
 .container {
@@ -53,7 +55,7 @@ a:hover {
 
 /*         Article styles         */
 
-div.article {
+.article {
     display: inline-block;
     height: auto;
     width: 420px;
@@ -68,14 +70,14 @@ article > h3 {
     color: #b4ad9e;
     font-family: "Ubuntu";
     font-weight: 300;
-    padding: 14px 0 0 0;
+    padding: 12px 0 0 0;
 }
 
 article > h2 {
     font-size: 30px;
     color: #626262;
     font-family: "Playfair Display";
-    margin-top: 21px;
+    margin-top: 20px;
 }
 
 article > p {
@@ -86,9 +88,31 @@ article > p {
     margin-top: 30px;
 }
 
-div.row {
-    margin-bottom: 108px;
+.container li {
+    list-style: none;
+    display: inline-block;
 }
+
+.container ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.container img{
+    width: 420px;
+    height: 280px;
+    height: auto;
+}
+
+main ul > li:nth-child(n):not(:nth-last-child(-n+2)) {
+    margin-bottom: 112px;
+}
+
+section {
+    margin-bottom: 38px;
+}
+
+
 
 div.button {
     font-size: 20px;
@@ -99,12 +123,5 @@ div.button {
     width: 165px;
     height: 60px;
     margin: 0 auto;
-    margin-top: -64px;
     text-align: center;
-}
-
-
-/*            Footer               */
-div.footer {
-    height: 70px;
 }
