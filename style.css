@@ -1,76 +1,92 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo|Krub|Muli|Quicksand');
 
-
 :root {
-    --blue: cornflowerblue;
+    --red: red;
+    --beige: beige;
 }
+
 
 body {
-    /*    margin: 0 0 0 0;*/
-    background-color: aliceblue;
     font-family: Muli, sans-serif, monospace;
+    box-sizing: border-box;
+
 }
 
-h1 {
-    margin: 0 0;
+
+.header-wrapper {
+    height: 120px;
+    text-align: center;
+    color: white;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.list {
+.header {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin: 35px 0 0 0;
+
+}
+
+.nav {
+        margin-top: auto;
+}
+
+.nav > a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav > a:hover{
+    color: azure;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
     margin: 0 auto;
-    width: 600px;
+    padding: 20px 0 0 0;
 }
 
-.item {
+
+div.item {
+    box-sizing: border-box;
     text-align: center;
     border: 2px solid gray;
     border-left-width: 20px;
-    padding: 10px 0 10px 0;
-    font-size: 25px;
-    width: 400px;
+    padding: 13px 0;
+    font-size: 2em;
+    width: 40%;
     margin: 0 auto 10px auto;
+
 }
 
-.passed {
+div.passed {
     border-color: cadetblue;
 }
 
-.not-passed {
+div.not-passed {
     border-color: orange;
 }
 
-.future {
+div.future {
     border-color: cornflowerblue;
 }
 
-a {
+.container a {
     color: cornflowerblue;
 }
 
-a:hover {
+.container a:hover {
     color: blue;
-    font-size: 24px;
+    font-size: .98em;
 }
 
 div.item:hover {
     opacity: .8;
-}
-
-.header-wrapper {
-    text-align: center;
-    font-size: 150%;
-    color: whitesmoke;
-    background-color: cornflowerblue;
-    padding: 30px 0 30px 0;
-}
-
-.main-wrapper {
-    background-color: #e7ecf3;
-    margin: 20px 20px 0 20px;
-    border: 1px solid #d3ac68;
-    height: 84vh;
-    padding-top: 20px;
-}
-
-.row8 {
-    background: gray;
 }
