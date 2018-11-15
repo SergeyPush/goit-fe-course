@@ -121,14 +121,22 @@ main ul > li:nth-child(n):not(:nth-last-child(-n+2)) {
     margin-bottom: 128px;
 }
 
-main ul > li:nth-last-child(-n+2) {
-    margin-bottom: 55px;
+section {
+    margin-bottom: 30px;
 }
 
 button {
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    border: 1px solid #626262;
+    padding: 22px 35px;
+    cursor: pointer;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 
