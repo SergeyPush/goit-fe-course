@@ -6,25 +6,23 @@ html {
     box-sizing: inherit;
 }
 
-/*
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-*/
 
 /*        Container styles       */
+
+
 .container {
     width: 900px;
     margin: 0 auto;
+    font-size: 0;
 }
+
 
 
 /*        Menu styles            */
 nav.menu {
-    padding: 74px 165px 98px 165px;
+    padding: 75px 165px 100px 165px;
 }
+
 
 ul.navigation {
     margin: 0;
@@ -33,27 +31,36 @@ ul.navigation {
 
 .navigation li {
     display: inline-block;
+    margin: 0;
 
-
-}
-
-.navigation a {
-    font-family: 'Playfair Display', serif;
-    color: #626262;
-    font-size: 14px;
-    text-decoration: none
-}
-
-a:hover {
-    color: #03a9f4;
 }
 
 .navigation li:not(:last-child) {
     margin: 0 100px 0 0;
 }
 
+.navigation a {
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    color: #03a9f4;
+}
+
+
 
 /*         Article styles         */
+
+
+.visually-hidden {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
 
 .article {
     display: inline-block;
@@ -61,31 +68,34 @@ a:hover {
     width: 420px;
 }
 
-.left {
-    margin-right: 56px;
+.image {
+    margin-bottom: 30px;
 }
 
-article > h3 {
+
+.tag {
+    padding: 0;
+    margin: 0 0 20px 0;
     font-size: 14px;
     color: #b4ad9e;
     font-family: "Ubuntu";
     font-weight: 300;
-    padding: 12px 0 0 0;
 }
 
 article > h2 {
     font-size: 30px;
     color: #626262;
     font-family: "Playfair Display";
-    margin-top: 20px;
+    margin: 0 0 29px 0;
 }
 
-article > p {
+.article-text {
+    padding: 0;
+    margin: 0 0 0 0;
     font-size: 14px;
     line-height: 24px;
     color: #626262;
     font-family: "Playfair Display";
-    margin-top: 30px;
 }
 
 .container li {
@@ -93,35 +103,35 @@ article > p {
     display: inline-block;
 }
 
-.container ul {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+.left {
+    margin-right: 60px;
 }
 
-.container img{
+.container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.container img {
     width: 420px;
     height: 280px;
-    height: auto;
 }
 
 main ul > li:nth-child(n):not(:nth-last-child(-n+2)) {
-    margin-bottom: 112px;
+    margin-bottom: 128px;
 }
 
-section {
-    margin-bottom: 38px;
+main ul > li:nth-last-child(-n+2) {
+    margin-bottom: 55px;
+}
+
+button {
+    font-size: 14px;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 
-
-div.button {
-    font-size: 20px;
-    line-height: 55px;
+button:hover {
     color: #626262;
-    font-family: "Playfair Display";
-    border: 1px solid #626262;
-    width: 165px;
-    height: 60px;
-    margin: 0 auto;
-    text-align: center;
 }
