@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*            Container                 */
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.container li {
+    list-style: none;
+}
+
+/*       Navigation and logo            */
+.site-logo {
+    float: left;
+}
+
+.site-navigation {
+    float: right;
+    width: 460px;
+}
+
+.site-navigation ul {
+    padding: 0;
+    margin: 0;
+}
+
+.site-navigation li {
+    float: left;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 38px;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    display: block;
+}
+
+/*              Section                 */
+.list-items{
+    padding: 0;
+    margin: 0;
+
+}
+
+.shop-item {
+    width: 255px;
+    height: 323px;
+    float: left;
+}
+.photo{
+    width: 255px;
+    height: 282px;
+}
+.name{
+    height: 40px;
+    width: 200px;
+    float: left;
+}
+.price{
+    height: 40px;
+    width: 55px;
+    float: right
+}
