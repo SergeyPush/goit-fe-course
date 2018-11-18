@@ -9,6 +9,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -18,19 +20,14 @@
 <body>
 
     <header class="container header clearfix">
-        <div class="site-logo ">MART</div>
+        <div class="site-logo "><a href="#">MART</a></div>
         <nav class="site-navigation ">
             <ul>
                 <li><a href="#">Home</a></li>
-
                 <li><a href="#">About us</a></li>
-
                 <li><a href="#">Page</a></li>
-
                 <li><a href="#">Shop</a></li>
-
                 <li><a href="#">Blog</a></li>
-
                 <li><a href="#">Contact us</a></li>
             </ul>
         </nav>
@@ -39,90 +36,134 @@
 
     <main class="container">
         <section class="shop">
-            <h2>Featured products</h2>
-            <ul class="list-items clearfix">
+            <h2 class="shop-section-title">Featured products</h2>
+            <ul class="shop-items clearfix">
                 <li>
-                    <div class="shop-item clearfix" >
-                        <div class="photo"><img src="img/product1.png" alt=""></div>
-                        <div class="name">Blue tshirt</div>
-                        <div class="price">26</div>
+                    <div class="shop-item clearfix">
+                        <div class="product-photo">
+
+                            <img src="img/product1.png" class="product-img" alt="Product photo">
+                        </div>
+                        <div class="product-name">Blue tshirt
+                            <div class="product-price">
+                                $26
+                            </div>
+                        </div>
+
                     </div>
                 </li>
 
                 <li>
                     <div class="shop-item">
-                        <div class="photo"><img src="img/product2.png" alt=""></div>
-                        <div class="name">Woman shirt</div>
-                        <div class="price">31</div>
+                        <div class="product-photo">
+                            <img src="img/product2.png" class="product-img" alt="Product photo">
+                        </div>
+                        <div class="product-name">Woman shirt <div class="product-price">$31</div>
+                        </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="shop-item">
-                        <div class="photo"><img src="img/product9.png" alt=""></div>
-                        <div class="name">Yellow tshirt</div>
-                        <div class="price">21</div>
+                        <div class="product-photo">
+                            <img src="img/product9.png" class="product-img" alt="Product photo">
+                        </div>
+                        <div class="product-name">Yellow tshirt<div class="product-price">$21</div>
+                        </div>
+
                     </div>
                 </li>
 
                 <li>
                     <div class="shop-item">
-                        <div class="photo"><img src="img/product4.png" alt=""></div>
-                        <div class="name">Cool lingerie</div>
-                        <div class="price">56</div>
+                        <div class="product-photo">
+                            <img src="img/product4.png" class="product-img" alt="Product photo">
+                        </div>
+                        <div class="product-name">Cool lingerie<div class="product-price">$56</div>
+                        </div>
                     </div>
                 </li>
 
                 <li>
                     <div class="shop-item">
-                        <div class="photo"><img src="img/product3.png" alt=""></div>
-                        <div class="name">Blue tshirt</div>
-                        <div class="price">26</div>
+                        <div class="product-photo">
+                            <img src="img/product3.png" class="product-img" alt="Product photo">
+                        </div>
+                        <div class="product-name">Blue tshirt<div class="product-price">$26</div>
+                        </div>
+
                     </div>
                 </li>
 
                 <li>
                     <div class="shop-item">
-                        <div class="photo"><img src="img/product5.png" alt=""></div>
-                        <div class="name">Woman shirt</div>
-                        <div class="price">31</div>
+                        <div class="product-photo">
+                            <img src="img/product5.png" class="product-img" alt="Product photo">
+
+                        </div>
+                        <div class="product-name">Woman shirt<div class="product-price">$31</div>
+                        </div>
+
                     </div>
                 </li>
 
                 <li>
                     <div class="shop-item">
-                        <div class="photo"><img src="img/product6.png" alt=""></div>
-                        <div class="name">Yellow tshirt</div>
-                        <div class="price">56</div>
+                        <div class="product-photo">
+                            <img src="img/product6.png" class="product-img" alt="Product photo">
+
+                        </div>
+                        <div class="product-name">Yellow tshirt<div class="product-price">$56</div>
+                        </div>
+
                     </div>
                 </li>
 
                 <li>
                     <div class="shop-item">
-                        <div class="photo"><img src="img/product8.png" alt=""></div>
-                        <div class="name">Cool lingerie</div>
-                        <div class="price">26</div>
+                        <div class="product-photo">
+                            <img src="img/product8.png" class="product-img" alt="Product photo">
+
+                        </div>
+                        <div class="product-name">Cool lingerie<div class="product-price">$26</div>
+                        </div>
+
                     </div>
                 </li>
             </ul>
         </section>
 
         <section class="news">
-            <h2>Latest news</h2>
-            <ul>
+            <h2 class="news-section-title">Latest news</h2>
+            <ul class="news-items clearfix">
                 <li>
-                    <div>Lorem ipsum dolor sit amet.</div>
+                    <article class="news-item">
+                        <img src="img/ipad-632394_960_720.png" alt="Lorem ipsum" class="news-img">
+                        <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis?</h3>
+
+                        <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aliquam, fugiat aut amet perferendis temporibus minima enim, ipsum sapiente cupiditate!</p>
+                        <button class="news-button">Read more</button>
+                    </article>
+                </li>
+                <li>
+                    <article class="news-item">
+                        <img src="img/slide1.png" alt="Lorem ipsum" class="news-img">
+                        <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis?</h3>
+
+                        <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aliquam, fugiat aut amet perferendis temporibus minima enim, ipsum sapiente cupiditate!</p>
+                        <button class="news-button">Read more</button>
+                    </article>
+                </li>
+                <li>
+                    <article class="news-item">
+                        <img src="img/product-img-5.png" alt="Lorem ipsum" class="news-img">
+                        <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis?</h3>
+
+                        <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aliquam, fugiat aut amet perferendis temporibus minima enim, ipsum sapiente cupiditate!</p>
+                        <button class="news-button">Read more</button>
+                    </article>
                 </li>
 
-                <li>
-                    <div>Lorem ipsum dolor sit amet.</div>
-                </li>
-                <li>
-                    <div>Lorem ipsum dolor sit amet.</div>
-                </li>
-                <li>
-                    <div>Lorem ipsum dolor sit amet.</div>
-                </li>
             </ul>
         </section>
     </main>
