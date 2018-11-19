@@ -8,7 +8,9 @@ html {
 
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -26,10 +28,10 @@ img {
 
 /*            Container                 */
 .container {
-    width: 1110px;
+    width: 1140px;
     margin: 0 auto;
     font-family: "OpenSans", sans-serif;
-
+    padding: 0 15px;
 }
 
 .container li {
@@ -37,7 +39,7 @@ img {
 }
 
 h2 {
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
 
 }
@@ -50,7 +52,6 @@ h2 {
     text-transform: uppercase;
     line-height: 0.667;
     text-align: center;
-    font-weight: 800;
     letter-spacing: -1px;
 }
 
@@ -58,7 +59,8 @@ h2 {
     margin-bottom: 92px;
 }
 
-h2::after {
+.shop-section-title::after,
+.news-section-title::after {
     content: "";
     display: block;
     width: 165px;
@@ -69,14 +71,9 @@ h2::after {
 
 
 /*       Navigation and logo            */
+
 .site-logo {
     float: left;
-    display: block;
-    margin-top: 34px;
-}
-
-.site-logo a {
-    display: block;
     text-decoration: none;
     font-size: 30px;
     font-family: "Roboto", sans-serif;
@@ -85,20 +82,18 @@ h2::after {
     color: #515151;
 }
 
-.site-logo a::first-letter {
+.menu {
+    float: right;
+}
+
+.site-logo::first-letter {
     color: var(--color-green);
     font-weight: bold;
 }
 
-.site-navigation {
-    float: right;
-    width: 460px;
-    margin-top: 42px;
-}
-
 .site-navigation ul {
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
 .site-navigation li {
@@ -109,7 +104,7 @@ h2::after {
     margin-right: 26px;
 }
 
-.site-navigation a {
+.menu a {
     text-decoration: none;
     display: block;
     font-size: 14px;
@@ -117,8 +112,6 @@ h2::after {
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 0.786;
-    text-align: right;
 }
 
 .site-navigation a:hover {
@@ -175,8 +168,8 @@ h2::after {
 .product-img {
     display: block;
     margin: 0 auto;
-    width: 255;
-    height: 282;
+    width: 255px;
+    height: 282px;
 
 }
 
@@ -209,7 +202,7 @@ h2::after {
 }
 
 .shop {
-    margin-bottom: 104px;
+    padding-bottom: 104px;
 }
 
 .shop-item:hover > .product-name {
@@ -225,16 +218,13 @@ h2::after {
 
 .news-items li {
     float: left;
+    width: 350px;
 }
 
 .news-items li:not(:last-child) {
     margin-right: 30px;
 }
 
-.news-item {
-    width: 350px;
-    height: 500px;
-}
 
 .news-img {
     width: 350px;
@@ -276,6 +266,7 @@ h2::after {
     padding: 10px 40px;
     margin: 0;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
