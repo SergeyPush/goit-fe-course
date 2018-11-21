@@ -132,8 +132,6 @@ h2 {
     /*  background-color: rgb(0, 0, 2);*/
     /*  opacity: 0.522;*/
 
-
-
 }
 
 .slider-buttons {
@@ -229,7 +227,8 @@ h2 {
 .shop-items li {
     float: left;
     cursor: pointer;
-
+    background-color: var(--color-white);
+    position: relative;
 }
 
 .shop-items li:not(:nth-child(4n)) {
@@ -261,6 +260,22 @@ h2 {
     height: 282px;
     object-fit: contain;
 
+}
+
+.overlay {
+    width: 235px;
+    height: 260px;
+    background-color: aquamarine;
+    opacity: 0.6;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+
+.overlay ul {
+    margin: 0;
+    padding: 0;
 }
 
 .product-name-price {
@@ -303,6 +318,10 @@ h2 {
 
 .shop-items li:hover > .product-name-price {
     background-color: var(--color-green);
+}
+
+.shop-items li:hover > .overlay {
+    opacity: 0.6;
 }
 
 /*        Footer         */
