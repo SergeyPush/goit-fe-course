@@ -26,6 +26,7 @@ img {
     height: auto;
 }
 
+
 /*            Container                 */
 .container {
     width: 1140px;
@@ -48,6 +49,7 @@ h2 {
     margin: 0;
     padding: 0;
 }
+
 
 /*       Navigation and logo            */
 
@@ -100,8 +102,9 @@ h2 {
 .header {
     background-color: var(--color-white);
     height: 90px;
-    padding-top: 30px
+    padding-top: 29px
 }
+
 
 /*         Slider section             */
 .slider {
@@ -177,21 +180,18 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1140px;
+    width: 1110px;
     height: 104px;
-    padding: 0 15px;
     z-index: 1;
 }
 
 .slider-item-text {
     position: absolute;
-    top: 215px;
+    top: 208px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.slider-item-text p {
-    display: block;
+    width: 750px;
+    height: 110px;
 }
 
 .slider-item-title {
@@ -204,17 +204,23 @@ h2 {
     margin-bottom: 30px;
 }
 
-.slider-item-descr {
-    /*    top: 300px;*/
-    font-size: 16px;
-    letter-spacing: -1px;
+.slider-item-text .slider-item-descr {
+    margin-top: 20px;
+    font-size: 23px;
+    /*    letter-spacing: 1px;*/
     color: var(--color-white);
     font-family: "Roboto";
     text-align: left;
+    font-weight: 100;
 }
 
 
 /*         Shop Section               */
+
+.shop {
+    padding-bottom: 100px;
+    padding-top: 103px;
+}
 
 .shop-section-title {
     font-size: 48px;
@@ -227,7 +233,7 @@ h2 {
 }
 
 .shop-section-title {
-    margin-bottom: 92px;
+    margin-bottom: 80px;
 }
 
 .shop-section-title::after {
@@ -242,7 +248,6 @@ h2 {
 .shop-items {
     padding: 0;
     margin: 0;
-
 }
 
 .shop-items > li {
@@ -260,18 +265,15 @@ h2 {
     margin-bottom: 32px;
 }
 
-
 .shop-item {
     width: 255px;
     height: 322px;
-    background-color: rgb(233, 240, 253);
     /*    cursor: pointer;*/
 }
 
 .product-photo {
     width: 255px;
     height: 282px;
-
 }
 
 .product-img {
@@ -280,7 +282,6 @@ h2 {
     width: 255px;
     height: 282px;
     object-fit: contain;
-
 }
 
 .overlay {
@@ -300,10 +301,16 @@ h2 {
     font-size: 0;
 }
 
+
 .shop-items-overlay-icons li {
     display: inline-block;
     border: 1px solid var(--color-white);
     cursor: pointer;
+}
+
+.shop-items-overlay-icons li:hover {
+    background-color: var(--color-green);
+
 }
 
 .top-icons {
@@ -314,7 +321,7 @@ h2 {
 
 .heart {
     margin-right: 8px;
-    background-image: url("../icons/arrows.png");
+    background-image: url("../icons/heart.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -396,10 +403,6 @@ h2 {
     padding: 0;
 }
 
-.shop {
-    padding-bottom: 104px;
-
-}
 
 .shop-items li:hover > .product-name-price {
     background-color: var(--color-green);
@@ -423,9 +426,8 @@ h2 {
     letter-spacing: 0px;
     line-height: 28px;
     color: #fefefe;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     text-align: center;
-    padding: auto 0;
 }
 
 .copyright span {
