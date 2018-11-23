@@ -32,6 +32,7 @@ img {
     margin: 0 auto;
     font-family: "OpenSans", sans-serif;
     padding: 0 15px;
+
 }
 
 .container li {
@@ -125,6 +126,7 @@ h2 {
     height: 600px;
     width: 100%;
     object-fit: cover;
+    filter: brightness(60%);
 }
 
 .slider-buttons {
@@ -135,8 +137,6 @@ h2 {
     width: 104px;
     height: 104px;
     background-color: rgb(26, 188, 156);
-    top: 50%;
-    transform: translateY(-50%);
     color: #ffffff;
     opacity: 0.8;
     font-size: 100px;
@@ -144,7 +144,7 @@ h2 {
 
 .slider-button-left {
     /*    left: 245px;*/
-    left: 24%;
+    left: 0;
 }
 
 
@@ -164,8 +164,7 @@ h2 {
 }
 
 .slider-button-right {
-    /*    right: 245px;*/
-    right: 24%;
+    right: 0;
 }
 
 .slider-button-right::before {
@@ -173,6 +172,16 @@ h2 {
     background-image: url("../icons/right-arrow.png");
 }
 
+.slider-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    height: 104px;
+    padding: 0 15px;
+    z-index: 1;
+}
 
 .slider-item-text {
     position: absolute;
