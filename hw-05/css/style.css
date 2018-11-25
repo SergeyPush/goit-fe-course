@@ -40,10 +40,7 @@ img {
     list-style: none;
 }
 
-main {
-
-    background-color: rgb(233, 240, 253);
-}
+main {}
 
 h2 {
     margin: 0;
@@ -54,6 +51,7 @@ h2 {
 /*       Navigation and logo            */
 
 .site-logo {
+    display: block;
     float: left;
     text-decoration: none;
     font-size: 30px;
@@ -109,9 +107,11 @@ h2 {
 /*         Slider section             */
 .slider {
     position: relative;
-    height: 600px;
+    min-height: 600px;
     width: 100%;
-
+    background-image: url("../img/slide4-1.png");
+    object-fit: cover;
+    filter: brightness(60%);
 }
 
 .slider-list {
@@ -128,8 +128,7 @@ h2 {
 .slider-photo {
     height: 600px;
     width: 100%;
-    object-fit: cover;
-    filter: brightness(60%);
+
 }
 
 .slider-buttons {
@@ -192,6 +191,8 @@ h2 {
     transform: translateX(-50%);
     width: 750px;
     height: 110px;
+    text-transform: uppercase;
+
 }
 
 .slider-item-title {
@@ -202,6 +203,7 @@ h2 {
     font-weight: 800;
     text-align: left;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .slider-item-text .slider-item-descr {
@@ -220,6 +222,8 @@ h2 {
 .shop {
     padding-bottom: 100px;
     padding-top: 103px;
+    background-color: rgb(233, 240, 253);
+
 }
 
 .shop-section-title {
@@ -285,19 +289,23 @@ h2 {
 }
 
 .overlay {
-    width: 235px;
-    height: 260px;
+    width: 100%;
+    min-height: 282px;
     background-color: rgba(50, 50, 50, 0.6);
     position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 80px 0 0 35px;
+    border: 10px solid rgba(255, 255, 255, 0.8);
     visibility: hidden;
 }
 
-.overlay > ul {
+.shop-items-overlay-icons {
+    height: 108px;
+    width: 166px;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 0;
 }
 
@@ -310,8 +318,14 @@ h2 {
 
 .shop-items-overlay-icons li:hover {
     background-color: var(--color-green);
-
+    border-color: var(--color-green);
 }
+
+.shop-items-overlay-icons a {
+    display: block;
+    text-decoration: none;
+}
+
 
 .top-icons {
     width: 50px;
@@ -430,6 +444,21 @@ h2 {
     text-align: center;
 }
 
-.copyright span {
+.copyright a {
     color: var(--color-green);
+    text-decoration: none;
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
