@@ -110,9 +110,9 @@ h2 {
     min-height: 600px;
     width: 100%;
     background-image: url("../img/slide4-1.png");
-    object-fit: cover;
-    filter: brightness(80%);
-
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .slider-list {
@@ -147,6 +147,7 @@ h2 {
 
 .slider-button-left {
     left: 0;
+    cursor: pointer;
 }
 
 
@@ -167,6 +168,7 @@ h2 {
 
 .slider-button-right {
     right: 0;
+    cursor: pointer;
 }
 
 .slider-button-right::before {
@@ -182,7 +184,6 @@ h2 {
     width: 1110px;
     height: 104px;
     z-index: 1;
-
 }
 
 .slider-list {
@@ -300,7 +301,7 @@ h2 {
 
 .shop-items-overlay-icons {
     height: 108px;
-    width: 166px;
+    width: 168px;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -313,8 +314,6 @@ h2 {
 
 .shop-items-overlay-icons li {
     display: inline-block;
-    border: 1px solid var(--color-white);
-    cursor: pointer;
 }
 
 .shop-items-overlay-icons li:hover {
@@ -325,24 +324,32 @@ h2 {
 .shop-items-overlay-icons a {
     display: block;
     text-decoration: none;
+
 }
 
-
 .top-icons {
+    margin-bottom: 8px;
+}
+
+.top-icons:not(:last-child) {
+    margin-right: 6px;
+}
+
+.top-icons a {
+    border: 1px solid var(--color-white);
     width: 50px;
     height: 50px;
-    margin-bottom: 6px;
+    cursor: pointer;
+
 }
 
 .heart {
-    margin-right: 8px;
     background-image: url("../icons/heart.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .arrows {
-    margin-right: 8px;
     background-image: url("../icons/arrows.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -356,8 +363,11 @@ h2 {
 
 .cart-section {
     height: 50px;
-    width: 166px;
+    width: 164px;
     background-color: rgba(50, 50, 50, 1);
+    border: 1px solid var(--color-white);
+    cursor: pointer;
+
 }
 
 .cart-icon {
