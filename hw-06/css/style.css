@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*       Header       */
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 490px;
+}
+
+/*       Sections     */
+
+.services {
+  height: 300px;
+}
+
+.over-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.section-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services-list-item {
+  width: 336px;
+  height: 70px;
+}
+
+/*  Section 2  */
+.team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  width: 308px;
+  height: 470px;
+}
+
+/*       Footer       */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
