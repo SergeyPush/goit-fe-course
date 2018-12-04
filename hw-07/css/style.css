@@ -1,3 +1,9 @@
+:root {
+    --font-msr: "Montserrat", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+}
+
 html {
     box-sizing: border-box;
 }
@@ -29,7 +35,9 @@ a {
     text-decoration: none;
 }
 
-ul, h1, p {
+ul,
+h1,
+p {
     margin: 0;
     padding: 0;
 }
@@ -47,6 +55,15 @@ header {
     align-items: flex-end;
 }
 
+.logo {
+
+    font-size: 26px;
+    font-family: 'Pinyon Script', cursive;
+    line-height: 1.577;
+    text-align: left;
+    color: #fdd135;
+}
+
 .menu {
     width: 486px;
     display: flex;
@@ -55,13 +72,15 @@ header {
 
 .menu-item-link {
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-msr);
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    transition: color 0.2s linear;
 }
 
 .menu-item-link:hover {
+    transition-property: color;
     color: #fdd135;
 }
 
@@ -74,12 +93,23 @@ header {
 .services-title {
     text-align: center;
     margin-bottom: 12px;
+    font-size: 40px;
+    font-family: var(--font-msr);
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
 
 .services-desc {
     text-align: center;
     margin-bottom: 72px;
-    ;
+    font-size: 16px;
+    font-family: var(--font-roboto);
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    line-height: 1.2;
+
 }
 
 .services-list {
@@ -122,10 +152,18 @@ header {
 
 .services-item-name {
     text-align: center;
+    font-size: 18px;
+    font-family: var(--font-msr);
+    color: rgb(34, 34, 34);
+    font-weight: bold;
 }
 
 .services-item-desc {
     text-align: center;
+    font-size: 14px;
+    font-family: var(--font-roboto);
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
 }
 
 /*                SECTION 2                 */
@@ -142,7 +180,7 @@ header {
     font-size: 40px;
     letter-spacing: -1px;
     color: #ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-msr);
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -151,7 +189,7 @@ header {
 .contact-desc {
     font-size: 16px;
     color: #777777;
-    font-family: "Droid Serif";
+    font-family: var(--font-roboto);
     font-style: italic;
     text-align: center;
     margin-bottom: 76px;
@@ -179,10 +217,23 @@ header {
     background-color: #ffffff;
     border: 1px solid #cccccc;
     font-size: 14px;
-    letter-spacing: 0px;
-    color: #bbbbbb;
-    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0;
+    /*    color: #bbbbbb;*/
+    font-family: var(--font-msr);
     font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding: 15px;
+}
+
+.form-column-item:focus:valid {
+    outline: 2px solid green;
+}
+
+.form-column-item:focus:invalid {
+    outline: 2px solid red;
+
 }
 
 .form-contact-message {
@@ -193,9 +244,22 @@ header {
     border: 1px solid #cccccc;
     font-size: 14px;
     letter-spacing: 0px;
-    color: #bbbbbb;
-    font-family: "Montserrat", sans-serif;
+    /*    color: #bbbbbb;*/
+    font-family: var(--font-msr);
     font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding: 15px;
+
+}
+
+.form-contact-message:focus:valid {
+    outline: 2px solid green;
+}
+
+.form-contact-message:focus:invalid {
+    outline: 2px solid red;
 }
 
 .form-button-send {
@@ -205,9 +269,10 @@ header {
     background-color: #fed136;
     font-size: 18px;
     color: #ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-msr);
     font-weight: bold;
     text-align: center;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
