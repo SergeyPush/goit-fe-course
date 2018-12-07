@@ -1,7 +1,7 @@
 :root {
     --font-msr: "Montserrat", sans-serif;
     --font-roboto: "Roboto", sans-serif;
-
+    --color-gold: #fdd135;
 }
 
 html {
@@ -33,6 +33,7 @@ li {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 ul,
@@ -62,7 +63,7 @@ p {
     font-family: 'Pinyon Script', cursive;
     line-height: 1.577;
     text-align: left;
-    color: #fdd135;
+    color: var(--color-gold);
 }
 
 .menu {
@@ -129,7 +130,7 @@ p {
     display: block;
     width: 73px;
     height: 73px;
-    border: 3px solid gold;
+    border: 3px solid var(--color-gold);
     margin: 0 auto;
     border-radius: 50%;
     margin-bottom: 24px;
@@ -182,8 +183,8 @@ p {
     background-image: url("../img/Map-Image.png");
     background-position: right;
     background-repeat: no-repeat;
-    padding-top: 105px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 90px;
 }
 
 .contact-title {
@@ -191,7 +192,7 @@ p {
     letter-spacing: -1px;
     color: #ffffff;
     font-family: var(--font-msr);
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px;
@@ -208,11 +209,12 @@ p {
 }
 
 .form-contact {
-    height: 306px;
+    /*    height: 306px;*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: space-between;
+
 }
 
 .form-column {
@@ -240,11 +242,11 @@ p {
 }
 
 .form-column-item:focus:valid {
-    outline: 2px solid green;
+    outline: 2px solid #28B463;
 }
 
 .form-column-item:focus:invalid {
-    outline: 2px solid red;
+    outline: 2px solid #FF5733;
 
 }
 
@@ -263,22 +265,24 @@ p {
     line-height: 1.2;
     text-align: left;
     padding: 15px;
+    resize: vertical;
 
 }
 
 .form-contact-message:focus:valid {
-    outline: 2px solid green;
+    outline: 2px solid #28B463;
 }
 
 .form-contact-message:focus:invalid {
-    outline: 2px solid red;
+    outline: 2px solid #FF5733;
 }
 
 .form-button-send {
+    margin: 30px auto 0;
     width: 240px;
     height: 65px;
     border-radius: 3px;
-    background-color: #fed136;
+    background-color: var(--color-gold);
     font-size: 18px;
     color: #ffffff;
     font-family: var(--font-msr);
