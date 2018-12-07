@@ -152,22 +152,16 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-between;
-    /*    height: 250px;*/
 }
 
 .services-list-item {
     width: 336px;
     padding-left: 56px;
     position: relative;
-    /*    height: 80px;*/
 }
 
 .services-list-item:not(:nth-last-of-type(-n+3)) {
     margin-bottom: 91px;
-}
-
-.services-list-item p {
-    /*    margin-left: 56px;*/
 }
 
 
@@ -183,6 +177,8 @@ img {
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
+    top: 0;
+    left: 0;
 }
 
 
