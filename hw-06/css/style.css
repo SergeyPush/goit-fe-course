@@ -112,7 +112,7 @@ img {
 /*       Sections     */
 .services {
     padding-top: 118px;
-    height: 548px;
+    padding-bottom: 10px;
 }
 
 .over-title {
