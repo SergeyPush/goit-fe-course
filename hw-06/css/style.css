@@ -157,7 +157,9 @@ img {
 
 .services-list-item {
     width: 336px;
-    height: 80px;
+    padding-left: 56px;
+    position: relative;
+    /*    height: 80px;*/
 }
 
 .services-list-item:not(:nth-last-of-type(-n+3)) {
@@ -165,7 +167,7 @@ img {
 }
 
 .services-list-item p {
-    margin-left: 56px;
+    /*    margin-left: 56px;*/
 }
 
 
@@ -339,8 +341,6 @@ img {
 .team-img {
     height: 470px;
     width: 100%;
-    position: absolute;
-    transform: translate(0, 0);
     transition: 0.2s transform linear;
 
 }
