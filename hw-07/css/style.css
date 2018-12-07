@@ -45,7 +45,7 @@ p {
 
 /*              HEADER                */
 .header {
-    padding: 10px;
+    /*    padding: 10px;*/
 }
 
 .navigation {
@@ -70,6 +70,7 @@ p {
     width: 486px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -123,6 +124,7 @@ p {
 .services-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .services-list-item::before {
@@ -209,7 +211,6 @@ p {
 }
 
 .form-contact {
-    /*    height: 306px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -217,22 +218,22 @@ p {
 
 }
 
+.form-contact input:not(:last-of-type) {
+    margin-bottom: 28px;
+}
+
 .form-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 455px;
 }
 
 .form-column-item {
-    display: flex;
-    width: 455px;
+    width: 100%;
     height: 50px;
     border-radius: 2px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
     font-size: 14px;
     letter-spacing: 0;
-    /*    color: #bbbbbb;*/
     font-family: var(--font-msr);
     font-weight: bold;
     text-transform: uppercase;
@@ -240,6 +241,7 @@ p {
     text-align: left;
     padding: 15px;
 }
+
 
 .form-column-item:focus:valid {
     outline: 2px solid #28B463;
@@ -252,7 +254,6 @@ p {
 
 .form-contact-message {
     width: 455px;
-    height: 209px;
     border-radius: 2px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -291,4 +292,11 @@ p {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.form-button-send:hover {
+    background-color: #fff;
+    color: #555;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+    transition: all 0.3s linear;
 }
