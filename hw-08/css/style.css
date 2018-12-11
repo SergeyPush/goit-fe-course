@@ -1,0 +1,161 @@
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-coral: rgb(255, 78, 80);
+    --color-orange: rgb(255, 165, 7);
+    --color-aqua: rgb(28, 215, 173);
+    --color-violet: rgb(78, 115, 219);
+    --color-black: rgb(51, 51, 51);
+    --color-graay: rgb(102, 102, 102);
+    --font-roboto: Roboto, sans-serif;
+    --font-msr: Montserrat, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    height: 200px;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    height: 540px;
+    background-image: url("../img/Vector_Smart_Object.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+.logo {
+    font-family: var(--font-msr);
+    color: var(--color-white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-link {
+    font-family: Montserrat;
+    color: var(--color-white);
+    font-size: 13.99px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* SECTION */
+.partner {
+    padding-top: 20px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-family: Montserrat;
+    color: #333333;
+    font-size: 1.374rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.partner-item {
+    position: relative;
+    max-width: 290px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.partner-item:not(:last-of-type) {
+    margin-bottom: 20px
+}
+
+.partner-item-photo {
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+
+.partner-item-status {
+    position: absolute;
+    top: 95px;
+    left: 52%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ffffff;
+    width: 33px;
+    height: 33px;
+}
+
+.partner-item-name {
+    font-family: Montserrat;
+    color: #333333;
+    font-size: 0.873rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.partner-item-desc {
+    font-family: var(--font-roboto);
+    color: #666666;
+    font-size: 0.873rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+.coral-tv {
+    background-color: var(--color-coral);
+    background-image: url("../pics/Shape%20128.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.show-more {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-coral);
+    background-color: var(--color-white);
+    width: 50%;
+    height: 40px;
+    font-family: var(--font-msr);
+    color: var(--color-coral);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
