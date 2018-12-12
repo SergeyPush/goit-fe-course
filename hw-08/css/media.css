@@ -1,15 +1,50 @@
 /* MOBILE */
 @media (max-width:768px) {
+
+
+
+    .header {
+        height: 540px;
+        background-image: url("../img/background1.jpg");
+    }
+
     .logo {
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
 
 /* TABLET */
-@media (min-width: 769px) {}
+@media (min-width: 769px) {
+
+    /* Header */
+    .header {
+        height: 700px;
+        background-image: url("../img/background2.jpg");
+
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between
+    }
+
+
+    /*  SECTION  */
+    .partner-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 850px;
+
+    }
+
+}
+
+
+
 
 /* DESKTOP */
-@media (min-width:1440px) {}
+@media (min-width:1000px) {}
