@@ -5,24 +5,25 @@
 
     .header {
         height: 540px;
-        background-image: url("../img/background1.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/background1.jpg");
+
     }
 
     .logo {
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
 
 /* TABLET */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width:1049px) {
 
     /* Header */
     .header {
         height: 700px;
-        background-image: url("../img/background2.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/background2.jpg");
 
     }
 
@@ -37,14 +38,32 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        max-width: 850px;
+        max-width: 700px;
 
     }
-
 }
 
 
-
-
 /* DESKTOP */
-@media (min-width:1000px) {}
+@media (min-width:1050px) {
+    .header {
+        height: 700px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/background3.jpg");
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    /*  SECTION  */
+    .partner-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1100px;
+
+    }
+}
