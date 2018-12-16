@@ -1,29 +1,43 @@
 /* MOBILE */
-@media (max-width:768px) {
+@media (max-width:767px) {
 
 
 
     .header {
         height: 540px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/background1.jpg");
-
+        background-repeat: no-repeat;
+        padding-top: 30px;
     }
 
     .logo {
         position: absolute;
-        top: 25%;
+        top: 23%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .partner-item:not(:last-of-type) {
+        /*        margin-bottom: 5px*/
+    }
+
 }
 
 /* TABLET */
 @media (min-width: 769px) and (max-width:1049px) {
 
+
+    .container {
+        width: 660px;
+        margin: 0 auto;
+    }
+
     /* Header */
     .header {
         height: 700px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/background2.jpg");
+        background-repeat: no-repeat;
+        padding-top: 46px;
 
     }
 
@@ -32,24 +46,78 @@
         justify-content: space-between
     }
 
+    .hero-text {
+        top: 52%;
+    }
+
+
+    .header-title {
+        font-size: 3.248rem;
+        width: 80%;
+        margin: 0 auto 40px;
+    }
+
+
+    .header-desc {
+        font-size: 1.499rem;
+    }
 
     /*  SECTION  */
     .partner-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         max-width: 700px;
+        padding: 20px 0;
+    }
 
+    .partner-item:not(:nth-of-type(2n)) {
+        margin-bottom: 40px
+    }
+
+
+    .orange-bulb {
+        order: 1;
+    }
+
+    .violet-plane {
+        order: 2;
     }
 }
 
 
 /* DESKTOP */
 @media (min-width:1050px) {
+
+    .container {
+
+        width: 942px;
+        margin: 0 auto;
+    }
+
     .header {
         height: 700px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/background3.jpg");
+        padding-top: 46px;
+
     }
+
+    .hero-text {
+        top: 45%;
+    }
+
+
+    .header-title {
+        font-size: 3.248rem;
+        max-width: 540px;
+        margin: 0 auto 40px;
+    }
+
+
+    .header-desc {
+        font-size: 1.499rem;
+    }
+
 
     .navigation {
         display: flex;
@@ -65,5 +133,23 @@
         justify-content: space-around;
         max-width: 1100px;
 
+    }
+
+    .partner-item {
+        max-width: 220px;
+    }
+
+    .partner-item:hover {
+        transition: all 0.3s linear;
+        box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .3);
+
+    }
+
+    .orange-bulb {
+        order: 1;
+    }
+
+    .violet-plane {
+        order: 2;
     }
 }
