@@ -5,39 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400" rel="stylesheet">
+
+    <title>Document</title>
 </head>
 
 <body>
 
-
-
     <div class="container-fluid">
-
         <div class="row">
-            <div class="col-12 box">Header</div>
+            <div class="col-12 box">
+                <header class="header">
+                    <nav class="navigation container">
+                        <a href="#" class="logo">URLAUBSGLÜCK</a>
+                        <ul class="navigation-menu">
+                            <li class="navigation-menu-item"><a href="#" class="navigation-link">Log in</a></li>
+                            <li class="navigation-menu-item"><a href="#" class="navigation-link">Sign up</a></li>
+                        </ul>
+                    </nav>
+                    <div class="hero-text">
 
+                        <h1 class="header-title">Share your holiday dreams</h1>
+                        <p class="header-desc centered">And find the perfect partner to fullfill it</p>
+                        <a href="#" class="header-find">Find your holiday partner</a>
+                    </div>
+                </header>
+            </div>
         </div>
 
 
-        <div class="row">
+        <section class="partner container">
+            <div class="row">
+                <div class="col-12 box">
+                    <h2 class="section-title">Meet a partner for your best holiday</h2>
+                </div>
+            </div>
+            <ul class="row">
+                <li class="col-sm-12 col-md-6 col-lg-3 partner-item coral-tv">
+                    <img src="./img/Layer_6.jpg" alt="Partner photo" class="partner-item-photo">
+                    <p class="partner-item-name">Bradley Hunter</p>
+                    <p class="partner-item-desc">Based in Chicago. I love playing tennis and loud music.</p>
+                </li>
 
-            <div class="col-md-6 col-xl-3 box">1</div>
-            <div class="col-md-6 col-xl-3 box">2</div>
-            <div class="col-md-6 col-xl-3 box">3</div>
-            <div class="col-md-6 col-xl-3 box">4</div>
+                <li class="col-sm-12 col-md-6 col-lg-3 partner-item orange-bulb">
+                    <img src="./img/Layer_8.jpg" alt="Partner photo" class="partner-item-photo ">
+                    <p class="partner-item-name">Lucas Marsha</p>
+                    <p class="partner-item-desc">I get my inspiration from nature and objects around me. I have passion to colours, typography and skateboards</p>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-3 partner-item aqua-cup">
+                    <img src="./img/Layer_7.jpg" alt="Partner photo" class="partner-item-photo">
+                    <p class="partner-item-name">Heather Walker</p>
+                    <p class="partner-item-desc">I'm a happy person that loves cats and climbing on mountains. </p>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-3 partner-item violet-plane">
+                    <img src="./img/Layer_10.jpg" alt="Partner photo" class="partner-item-photo">
+                    <p class="partner-item-name">Bradley Hunter</p>
+                    <p class="partner-item-desc">Based in Chicago. I love playing tennis and loud music.</p>
+                </li>
+            </ul>
 
-        </div>
+            <div class="row">
+                <div class="col-12 box">
+                    <button class="button show-more">See other partners</button>
+                </div>
+            </div>
 
-        <div class="row">
-            <div class="col-12 box">Footer</div>
-        </div>
 
+        </section>
     </div>
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

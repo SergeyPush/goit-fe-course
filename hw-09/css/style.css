@@ -1,4 +1,247 @@
-.box {
-  background-color: pink;
-  border: 2px solid green;
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-coral: rgb(255, 78, 80);
+    --color-orange: rgb(255, 165, 7);
+    --color-aqua: rgb(28, 215, 173);
+    --color-violet: rgb(78, 115, 219);
+    --color-black: rgb(51, 51, 51);
+    --color-graay: rgb(102, 102, 102);
+    --font-roboto: Roboto, sans-serif;
+    --font-msr: Montserrat, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+}
+
+h1,
+h2,
+ul,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+/* HEADER */
+.header {
+    min-height: 540px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: var(--font-msr);
+    color: var(--color-white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+.navigation-link {
+    display: block;
+    font-family: Montserrat;
+    color: var(--color-white);
+    font-size: 13.99px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    border-color: #ffffff;
+}
+
+.hero-text {
+    min-width: 90%;
+    margin: auto 10px;
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--font-msr);
+    color: var(--color-white);
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-desc {
+    text-align: center;
+    font-family: Roboto;
+    color: var(--color-white);
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* SECTION */
+.partner {
+    padding-top: 64px;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    font-family: Montserrat;
+    color: #333333;
+    font-size: 1.374rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.partner-list {
+
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.partner-item {
+    position: relative;
+    /*    max-width: 280px;*/
+    display: block;
+    margin: 0 auto;
+    padding: 14px 0;
+    /*    min-height: 250px;*/
+
+}
+
+.partner-item-name {
+    margin-bottom: 20px;
+}
+
+.partner-item:hover {
+    cursor: pointer;
+}
+
+
+.partner-item-photo {
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+
+.partner-item::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid var(--color-white);
+    position: absolute;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 50%;
+    transform: translateX(20px)
+}
+
+
+
+.partner-item-name {
+    font-family: Montserrat;
+    color: #333333;
+    font-size: 0.873rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 14 0 18px;
+}
+
+.partner-item-desc {
+    font-family: var(--font-roboto);
+    color: #666666;
+    font-size: 0.873rem;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+
+.coral-tv::before {
+    background-color: var(--color-coral);
+    background-image: url("../pics/Shape%20128.png");
+}
+
+.orange-bulb::before {
+    background-color: var(--color-orange);
+    background-image: url("../pics/Shape%20155.png");
+}
+
+.aqua-cup::before {
+    background-color: var(--color-aqua);
+    background-image: url("../pics/Shape%20153.png");
+}
+
+.violet-plane::before {
+    background-color: var(--color-violet);
+    background-image: url("../pics/Shape%20170.png");
+}
+
+.button,
+.header-find {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-coral);
+    background-color: var(--color-coral);
+    font-family: var(--font-msr);
+    color: var(--color-white);
+    font-size: 0.875rem;
+    font-weight: 700;
+    min-width: 100px;
+    padding: 10px 30px;
+    max-width: 300px;
+}
+
+.button:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    border-color: var(--color-coral);
+    background-color: var(--color-white);
+    color: var(--color-coral);
+    cursor: pointer;
 }
