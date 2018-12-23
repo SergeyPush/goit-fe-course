@@ -31,17 +31,17 @@ a {
     display: block;
 }
 
+a,
+a:hover {
+    text-decoration: none;
+}
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-
-a {
-    text-decoration: none;
-
-}
 
 li {
     list-style: none;
@@ -235,6 +235,7 @@ li {
     min-width: 100px;
     padding: 10px 30px;
     max-width: 300px;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -243,5 +244,12 @@ li {
     border-color: var(--color-coral);
     background-color: var(--color-white);
     color: var(--color-coral);
-    cursor: pointer;
+}
+
+.header-find:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    border-color: var(--color-coral);
+    background-color: var(--color-white);
+    color: var(--color-coral);
 }
