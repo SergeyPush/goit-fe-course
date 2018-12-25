@@ -107,6 +107,7 @@ li {
 }
 
 .header-desc {
+    margin: 0 auto;
     text-align: center;
     font-family: Roboto;
     color: var(--color-white);
