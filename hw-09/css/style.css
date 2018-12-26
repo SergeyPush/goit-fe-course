@@ -67,6 +67,12 @@ li {
     text-align: center;
 }
 
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .navigation-menu {
     display: flex;
     justify-content: center;
@@ -89,11 +95,6 @@ li {
     transition-property: border-color;
     transition-duration: 0.3s;
     border-color: #ffffff;
-}
-
-.hero-text {
-    min-width: 90%;
-    margin: auto 10px;
 }
 
 .header-title {
@@ -132,13 +133,13 @@ li {
 
 .partner-list {
 
-    margin-bottom: 10px;
-    margin: 0 auto;
+    /*    margin-bottom: 10px;*/
+    /*    margin: 0 auto;*/
 }
 
 .partner-item {
     position: relative;
-    /*    max-width: 280px;*/
+    max-width: 280px;
     display: block;
     margin: 0 auto;
     padding: 14px 0;
