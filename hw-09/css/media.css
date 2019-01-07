@@ -9,16 +9,9 @@
     }
 
     .navigation {
-        display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
-        justify-content: space-between;
         height: 160px;
-    }
-
-    .hero-text {
-        margin-top: 30px;
-        margin-bottom: auto;
     }
 
 }
@@ -27,10 +20,6 @@
 @media (min-width: 768px) and (max-width:959px) {
 
 
-    .container {
-        /*        width: 660px;*/
-        margin: 0 auto;
-    }
 
     /* Header */
     .header {
@@ -40,13 +29,6 @@
         padding-top: 46px;
 
     }
-
-    .navigation {
-        display: flex;
-        justify-content: space-between
-    }
-
-
 
 
     .header-title {
@@ -62,7 +44,6 @@
 
     /*  SECTION  */
     .partner-list {
-
         padding: 20px 0;
     }
 
@@ -84,11 +65,6 @@
 /* DESKTOP */
 @media (min-width:960px) {
 
-    .container {
-
-        /*        width: 942px;*/
-        margin: 0 auto;
-    }
 
     .header {
         display: flex;
@@ -113,28 +89,17 @@
     }
 
 
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-
     /*  SECTION  */
-    .partner-list {}
-
     .partner-item {
         min-width: 230px;
-
     }
-
 
 
     .partner-item:hover {
         transition: all 0.3s linear;
         box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .3);
-
     }
+
 
     .orange-bulb {
         order: 1;
