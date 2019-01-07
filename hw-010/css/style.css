@@ -1,0 +1,21 @@
+@import "./reset.css";
+
+.container {
+  width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* HEDER */
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  width: 620px;
+  justify-content: space-between;
+}
