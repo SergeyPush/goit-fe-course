@@ -54,18 +54,11 @@
 
 .navigation-menu__link {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-
-
+    display: block;
     font-size: 14px;
     color: var(--color-white);
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    display: block;
-
     transition: color 0.2s linear;
 }
 
@@ -80,9 +73,7 @@
 }
 
 
-
-
-.navigation-menu navigation-menu__link::after {
+.navigation-menu a::after {
     content: "";
     display: block;
     width: 0;
