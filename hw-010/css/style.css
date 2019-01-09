@@ -3,6 +3,8 @@
 :root {
     --color-green: #95e1d3;
     --color-red: #ff9999;
+    --color-orange: #fce38a;
+    --color-white: #ffffff;
 }
 
 .container {
@@ -26,25 +28,120 @@
     justify-content: space-between;
 }
 
+.site-navigation__logo {
+    font-family: Montserrat;
+    color: var(--color-white);
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
 .navigation-menu {
     display: flex;
     flex-direction: row;
     width: 620px;
     justify-content: space-between;
+    align-items: center;
+
 }
 
+.navigation-menu svg {
+    display: block;
+    width: 18px;
+    height: 15px;
+    fill: var(--color-white);
+    transition: fill 0.2s linear;
+}
+
+.navigation-menu__link {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    font-size: 14px;
+    color: var(--color-white);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: block;
+
+    transition: color 0.2s linear;
+}
+
+.navigation-menu .navigation-menu__link:hover {
+    transition-property: color;
+    color: var(--color-orange);
+}
+
+.navigation-menu .navigation-menu__link:hover svg {
+    transition-property: fill;
+    fill: var(--color-orange);
+}
+
+
+
+
+.navigation-menu navigation-menu__link::after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 3px solid var(--color-orange);
+    margin-top: 8px;
+    transition: width 0.2s linear;
+}
+
+
+.navigation-menu a:hover::after {
+    transition-property: width;
+    width: 100%;
+}
+
+
+
+
 .header__over-title {
+    font-family: "Kaushan Script";
+    color: #ffffff;
+    font-size: 4.5rem;
     text-align: center;
 }
 
 .header__title {
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 9.375rem;
+    font-weight: 700;
+    line-height: 0.933;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .header__btn {
+    font-family: Montserrat;
+    color: var(--color-white);
+    font-size: 0.875rem;
+    font-weight: 700;
     text-align: center;
+    line-height: 1.9rem;
+    border: 3px solid var(--color-white);
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+
+
 }
 
+.header__btn:hover {
+    transition-property: all;
+    transition-duration: 0.2s;
+    color: var(--color-orange);
+    border: 3px solid var(--color-orange);
+
+
+}
 
 /*  SERVICES  */
 .services {
@@ -191,6 +288,13 @@
     line-height: 1.2;
 }
 
+.team__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    margin: 35px auto 0;
+    border-bottom: 4px solid var(--color-red);
+}
 
 .team__desc {
     font-size: 15px;
@@ -380,4 +484,12 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .header {
+        background-image: url("../img/banner@2x.jpg");
+    }
 }
