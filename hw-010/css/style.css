@@ -347,19 +347,37 @@
 }
 
 .overflow__link {
-    display: block;
     width: 100%;
     height: 100%;
+    background-color: #fce38a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #fce38a;
-
+*/
     transition: background-color 0.2s linear;
 }
 
+.overflow__link svg {
+    fill: var(--color-red);
+    height: 60%;
+    width: 60%;
+
+}
+
+
 .overflow__link:hover {
     transition-property: background-color;
-    background-color: var(--color-green);
+    background-color: var(--color-red);
+}
+
+.overflow__link:hover svg {
+    transition: fill 0.2s linear;
+    fill: var(--color-white);
+
 }
 
 .facebook {
