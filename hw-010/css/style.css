@@ -19,15 +19,29 @@
     background-image: url("../img/banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 23px;
 }
 
 .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
 }
 
@@ -39,10 +53,19 @@
 }
 
 .navigation-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 620px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 }
@@ -52,6 +75,7 @@
     width: 18px;
     height: 15px;
     fill: var(--color-white);
+    -webkit-transition: fill 0.2s linear;
     transition: fill 0.2s linear;
 }
 
@@ -62,15 +86,18 @@
     color: var(--color-white);
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
+    -webkit-transition: color 0.2s linear;
     transition: color 0.2s linear;
 }
 
 .navigation-menu .navigation-menu__link:hover {
+    -webkit-transition-property: color;
     transition-property: color;
     color: var(--color-orange);
 }
 
 .navigation-menu .navigation-menu__link:hover svg {
+    -webkit-transition-property: fill;
     transition-property: fill;
     fill: var(--color-orange);
 }
@@ -82,11 +109,13 @@
     width: 0;
     border-bottom: 3px solid var(--color-orange);
     margin-top: 8px;
+    -webkit-transition: width 0.2s linear;
     transition: width 0.2s linear;
 }
 
 
 .navigation-menu a:hover::after {
+    -webkit-transition-property: width;
     transition-property: width;
     width: 100%;
 }
@@ -137,7 +166,9 @@
 }
 
 .header__btn:hover {
+    -webkit-transition-property: all;
     transition-property: all;
+    -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     color: var(--color-orange);
     border: 3px solid var(--color-orange);
@@ -184,9 +215,14 @@
 }
 
 .services__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-line-pack: justify;
     align-content: space-between;
 }
 
@@ -309,8 +345,15 @@
 }
 
 .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -324,17 +367,23 @@
     width: 380px;
     height: 470px;
     position: absolute;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 227, 137, 0.9)), to(rgba(243, 129, 129, 0.9)));
     background-image: linear-gradient(to bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
     opacity: 0;
     z-index: 1;
+    -webkit-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px rgba(149, 225, 211, 1);
     box-shadow: 10px 10px rgba(149, 225, 211, 1);
+
+    -webkit-transition: opacity 0.2s linear;
 
     transition: opacity 0.2s linear;
 
 }
 
 .overflow:hover {
+    -webkit-transition: background-color opacity;
     transition: background-color opacity;
     opacity: 1;
 }
@@ -342,8 +391,14 @@
 
 .overflow__list {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 }
@@ -361,14 +416,21 @@
     width: 100%;
     height: 100%;
     background-color: #fce38a;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     /*
     background-position: center;
     background-repeat: no-repeat;
 */
+    -webkit-transition: background-color 0.2s linear;
     transition: background-color 0.2s linear;
 }
 
@@ -381,11 +443,13 @@
 
 
 .overflow__link:hover {
+    -webkit-transition-property: background-color;
     transition-property: background-color;
     background-color: var(--color-red);
 }
 
 .overflow__link:hover svg {
+    -webkit-transition: fill 0.2s linear;
     transition: fill 0.2s linear;
     fill: var(--color-white);
 
@@ -416,12 +480,19 @@
 .team-list__img {
     height: 470px;
     width: 100%;
+    -webkit-transition: 0.2s -webkit-transform linear;
+    transition: 0.2s -webkit-transform linear;
     transition: 0.2s transform linear;
+    transition: 0.2s transform linear, 0.2s -webkit-transform linear;
 
 }
 
 .overflow:hover + .team-list__photo .team-list__img {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
     transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
 }
 
@@ -449,9 +520,18 @@
 .footer {
     border-top: 1px solid #e5e5e5;
     height: 62px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -501,13 +581,15 @@
     border: 0;
     padding: 0;
     white-space: nowrap;
+    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
 
-@media (min-resolution: 192dpi),
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .header {
         background-image: url("../img/banner@2x.jpg");
