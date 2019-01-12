@@ -50,6 +50,7 @@
     color: var(--color-white);
     font-size: 1.875rem;
     font-weight: 700;
+    display: block;
 }
 
 .navigation-menu {
@@ -70,10 +71,10 @@
 
 }
 
-.navigation-menu svg {
+.navigation-menu__link svg {
     display: block;
     width: 18px;
-    height: 15px;
+    height: 18px;
     fill: var(--color-white);
     -webkit-transition: fill 0.2s linear;
     transition: fill 0.2s linear;
@@ -88,6 +89,20 @@
     text-transform: uppercase;
     -webkit-transition: color 0.2s linear;
     transition: color 0.2s linear;
+}
+
+.shopping-cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 90px;
 }
 
 .navigation-menu .navigation-menu__link:hover {
@@ -150,6 +165,7 @@
 }
 
 .hero__btn {
+    display: block;
     font-family: Montserrat;
     color: var(--color-white);
     font-size: 0.875rem;
@@ -161,8 +177,7 @@
     height: 40px;
     margin: 0 auto;
     cursor: pointer;
-
-
+    text-transform: uppercase;
 }
 
 .header__btn:hover {
@@ -226,23 +241,18 @@
     align-content: space-between;
 }
 
-.services-item {
+.services__item {
     width: 336px;
     padding-left: 56px;
     position: relative;
 }
 
-.services-item:not(:nth-last-of-type(-n+3)) {
+.services__item:not(:nth-last-of-type(-n+3)) {
     margin-bottom: 91px;
 }
 
 
-.photo::before,
-.web::before,
-.creativity::before,
-.seo::before,
-.html::before,
-.digital::before {
+.services__icon::before {
     content: "";
     position: absolute;
     background-position: center;
@@ -254,31 +264,31 @@
 }
 
 
-.photo::before {
+.services__icon--photo::before {
     background-image: url(../icons/ALARM.png);
 }
 
-.web::before {
+.services__icon--web::before {
     background-image: url(../icons/LINE%20GRAPH.png);
 }
 
-.creativity::before {
+.services__icon--creativity::before {
     background-image: url(../icons/COMPUTER%20_%20OK.png);
 }
 
-.seo::before {
+.services__icon--seo::before {
     background-image: url(../icons/BOOK%202.png);
 }
 
-.html::before {
+.services__icon--html::before {
     background-image: url(../icons/HOME.png);
 }
 
-.digital::before {
+.services__icon--digital::before {
     background-image: url(../icons/IMAGE.png);
 }
 
-.services-item__title {
+.services__card-title {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: rgb(51, 51, 51);
@@ -288,7 +298,7 @@
     margin-bottom: 12px;
 }
 
-.services-item__desc {
+.services__card-desc {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     color: rgb(153, 153, 153);
@@ -344,7 +354,7 @@
     width: 940px;
 }
 
-.team-list {
+.team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -359,7 +369,7 @@
 
 .team-list__item {
     width: 380px;
-    height: 540px;
+    /*    height: 540px;*/
     position: relative;
 }
 
