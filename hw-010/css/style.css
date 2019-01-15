@@ -161,8 +161,7 @@
     height: 40px;
     margin: 0 auto;
     cursor: pointer;
-
-
+    text-transform: uppercase;
 }
 
 .header__btn:hover {
