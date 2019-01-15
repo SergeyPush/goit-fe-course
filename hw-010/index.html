@@ -20,24 +20,32 @@
 
     <header class="header">
         <nav class="site-navigation container">
-            <a href="#" class="site-navigation__logo">MoGo</a>
+            <a href="#" class="site-navigation__logo site-logo">MoGo</a>
             <ul class="navigation-menu">
                 <li><a href="#" class="navigation-menu__link">About</a></li>
                 <li><a href="#" class="navigation-menu__link">Service</a></li>
                 <li><a href="#" class="navigation-menu__link">Work</a></li>
                 <li><a href="#" class="navigation-menu__link">Blog</a></li>
                 <li><a href="#" class="navigation-menu__link">Contact</a></li>
-                <li><a href="#" class="navigation-menu__link">
-                        <svg>
-                            <use href="svg/sprite.svg#shopping_cart"></use>
-                        </svg>
-                    </a></li>
-                <li><a href="#" class="navigation-menu__link">
-                        <svg>
-                            <use href="svg/sprite.svg#search"></use>
-                        </svg>
-                    </a></li>
+
+                <ul class="shopping-cart">
+                    <li><a href="#" class="navigation-menu__link">
+                            <svg>
+                                <use href="svg/sprite.svg#shopping_cart"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="navigation-menu__link">
+                            <svg>
+                                <use href="svg/sprite.svg#search"></use>
+                            </svg>
+                        </a></li>
+
+                </ul>
+
             </ul>
+
+
+
         </nav>
         <div class="hero">
             <p class="hero__over-title">Creative template</p>
@@ -55,29 +63,29 @@
             <h2 class="services__title">Amazing services</h2>
 
             <ul class="services__list">
-                <li class="services-item photo">
-                    <p class="services-item__title">Photography</p>
-                    <p class="services-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <li class="services__item services__icon services__icon--photo">
+                    <p class="services__card-title">Photography</p>
+                    <p class="services__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                 </li>
-                <li class="services-item web">
-                    <p class="services-item__title">Web design</p>
-                    <p class="services-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <li class="services__item services__icon services__icon--web">
+                    <p class="services__card-title">Web design</p>
+                    <p class="services__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                 </li>
-                <li class="services-item creativity">
-                    <p class="services-item__title">Creativity</p>
-                    <p class="services-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <li class="services__item services__icon services__icon--creativity">
+                    <p class="services__card-title">Creativity</p>
+                    <p class="services__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                 </li>
-                <li class="services-item seo">
-                    <p class="services-item__title">Seo</p>
-                    <p class="services-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <li class="services__item services__icon services__icon--seo">
+                    <p class="services__card-title">Seo</p>
+                    <p class="services__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                 </li>
-                <li class="services-item html">
-                    <p class="services-item__title">Css/html</p>
-                    <p class="services-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <li class="services__item services__icon services__icon--html">
+                    <p class="services__card-title">Css/html</p>
+                    <p class="services__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                 </li>
-                <li class="services-item digital">
-                    <p class="services-item__title">Digital</p>
-                    <p class="services-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <li class="services__item services__icon services__icon--digital">
+                    <p class="services__card-title">Digital</p>
+                    <p class="services__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                 </li>
             </ul>
         </section>
@@ -88,7 +96,7 @@
             <h2 class="team__title">Meet our team</h2>
             <p class="team__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore officiis vitae aliquam commodi veniam beatae fugit facilis quaerat, voluptas itaque, maxime id quae explicabo at necessitatibus nesciunt optio ducimus maiores.</p>
 
-            <ul class="team-list">
+            <ul class="team__list">
                 <li class="team-list__item">
                     <div class="overflow">
                         <ul class="overflow__list">
@@ -171,7 +179,7 @@
                     <p class="team-list__name">Christopher Campbell</p>
                     <p class="team-list__desc">Branding/UX design</p>
                 </li>
-                <li class="team-list-item">
+                <li class="team-list__item">
                     <div class="overflow">
                         <ul class="overflow__list">
                             <li class="overflow__item">
