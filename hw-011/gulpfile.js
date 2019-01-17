@@ -1,3 +1,5 @@
+'use strict';
+
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
@@ -67,7 +69,7 @@ gulp.task('scripts', () => {
 
 gulp.task('sprite', () => {
   return gulp
-    .src('./src/images/**/icon-*.svg')
+    .src('./src/images/icons/icon-*.svg')
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('./build/images'));
@@ -98,7 +100,7 @@ gulp.task('watch', () => {
   gulp.watch('src/js/**/*.js', ['scripts']).on('change', server.reload);
 });
 
-gulp.task('serve', gulp.series('styles', () => {
+gulp.task('serve', ['styles'], () => {
   return server.init({
     server: './build',
     notify: false,
@@ -109,26 +111,18 @@ gulp.task('serve', gulp.series('styles', () => {
     host: 'localhost',
     port: 3000
   });
-}
-	));
-
-
+});
 
 gulp.task('del:build', () => del('./build'));
 
 gulp.task('prepare', () => del(['**/.gitkeep', 'README.md', 'banner.png']));
 
-// gulp.task('build', callback =>
-//   sequence(
-//     'del:build',
-//     ['sprite', 'images', 'fonts', 'styles', 'html', 'scripts'],
-//     callback
-//   )
-// );
+gulp.task('build', callback =>
+  sequence(
+    'del:build',
+    ['sprite', 'images', 'fonts', 'styles', 'html', 'scripts'],
+    callback
+  )
+);
 
-gulp.task('build', gulp.series('del:build',
-    ['sprite', 'images', 'fonts', 'styles', 'html', 'scripts']))
-
-// gulp.task('start', callback => sequence('build', 'serve', 'watch', callback));
-
-gulp.task('start', gulp.series('build','serve', 'watch'));
+gulp.task('start', callback => sequence('build', 'serve', 'watch', callback));
