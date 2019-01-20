@@ -1,0 +1,137 @@
+.header {
+  min-height: 1000px;
+  background-image: url("../images/img/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__logo {
+    font-family: $font_msr;
+    color: $white;
+    font-size: 1.875rem;
+    font-weight: 700;
+    display: block;
+  }
+
+  &__menu {
+    .navigation-menu {
+      display: flex;
+      flex-direction: row;
+      width: 620px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  width: 620px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    color: $white;
+    font-family: $font_msr;
+    text-transform: uppercase;
+    transition: color 0.2s linear;
+  }
+
+  &__link svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: $white;
+    transition: fill 0.2s linear;
+  }
+
+  .shopping-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90px;
+  }
+
+  &__link:hover {
+    transition-property: color;
+    color: $orange;
+  }
+
+  &__link:hover svg {
+    transition-property: fill;
+    fill: $orange;
+  }
+
+  a::after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 3px solid $orange;
+    margin-top: 8px;
+    transition: width 0.2s linear;
+  }
+
+  a:hover::after {
+    transition-property: width;
+    width: 100%;
+  }
+}
+
+.hero {
+  max-width: 800px;
+  margin: 160px auto 0;
+
+  &__over-title {
+    font-family: "Kaushan Script";
+    color: $white;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-family: $font_msr;
+    color: $white;
+    font-size: 9.375rem;
+    font-weight: 700;
+    line-height: 0.933;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 108px;
+  }
+
+  &__btn {
+    display: block;
+    font-family: $font_msr;
+    color: $white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.9rem;
+    border: 3px solid $white;
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  &__btn:hover {
+    transition-property: all;
+    transition-duration: 0.2s;
+    color: $orange;
+    border: 3px solid $orange;
+  }
+}

@@ -1,0 +1,46 @@
+.footer {
+  border-top: 1px solid #e5e5e5;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__info {
+  font-size: 14px;
+  color: #333333;
+  font-family: $font_msr;
+  text-align: center;
+}
+
+.copyright__link {
+  color: $red;
+  display: inline-block;
+}
+
+.subscribtion__input {
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: $font_msr;
+  font-weight: 300;
+  font-style: italic;
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+}
+
+.subscribtion__btn {
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: $font_msr;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  text-transform: uppercase;
+}

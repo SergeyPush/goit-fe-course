@@ -1,0 +1,168 @@
+.team {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__over-title {
+    text-align: center;
+    margin: 0 0 11px;
+    padding: 0;
+    font-size: 24px;
+    font-family: $font_ksh;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 30px;
+    font-family: $font_msr;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  &__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    margin: 35px auto 0;
+    border-bottom: 4px solid $red;
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: $fnt_rbt;
+    text-align: center;
+    margin: 0 auto 90px;
+    width: 940px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.team-list__item {
+  width: 380px;
+  /*    height: 540px;*/
+  position: relative;
+
+  &__photo {
+    height: 470px;
+    margin-bottom: 29px;
+  }
+
+  &__img {
+    height: 470px;
+    width: 100%;
+    transition: 0.2s -webkit-transform linear;
+    transition: 0.2s transform linear;
+    transition: 0.2s transform linear, 0.2s -webkit-transform linear;
+  }
+
+  &__name {
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 34px;
+    color: #999999;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.overflow {
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(251, 227, 137, 0.9), rgba(243, 129, 129, 0.9));
+  opacity: 0;
+  z-index: 1;
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px rgba(149, 225, 211, 1);
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    transition: background-color opacity;
+    opacity: 1;
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    width: 55px;
+    height: 55px;
+  }
+
+  &__item:not(:last-of-type) {
+    border-right: 1px solid $red;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    background-color: #fce38a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s linear;
+  }
+
+  &__link svg {
+    fill: $red;
+    height: 60%;
+    width: 60%;
+  }
+
+  &__link:hover {
+    transition-property: background-color;
+    background-color: $red;
+  }
+
+  &__link:hover svg {
+    transition: fill 0.2s linear;
+    fill: $white;
+  }
+}
+
+.overflow:hover + .team-list__photo .team-list__img {
+  transition-property: transform;
+  transform: translate(-10px, -10px);
+}
+
+.facebook {
+  background-image: url("../images/icons/facebook.png");
+}
+
+.twitter {
+  background-image: url("../images/icons/twitter.png");
+}
+
+.pinterest {
+  background-image: url("../images/icons/pinterest.png");
+}
+
+.instagram {
+  background-image: url("../imaes/icons/instagram.png");
+}

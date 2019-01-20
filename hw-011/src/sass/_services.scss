@@ -1,0 +1,106 @@
+/*  SERVICES  */
+.services {
+  padding-top: 48px;
+  padding-bottom: 10px;
+
+  &__over-title {
+    text-align: center;
+    margin: 0 0 11px;
+    padding: 0;
+    font-size: 24px;
+    font-family: $font_ksh;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 62px;
+    padding: 0;
+    font-size: 30px;
+    font-family: $font_msr;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  &__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    margin: 35px auto 0;
+    border-bottom: 4px solid $red;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+  }
+
+  &__item {
+    width: 336px;
+    padding-left: 56px;
+    position: relative;
+  }
+
+  &__item:not(:nth-last-of-type(-n + 3)) {
+    margin-bottom: 91px;
+  }
+
+  &__icon::before {
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+  }
+
+  &__icon--photo::before {
+    background-image: url("../images/icons/ALARM.png");
+  }
+
+  &__icon--web::before {
+    background-image: url("../images/icons/LINE%20GRAPH.png");
+  }
+
+  &__icon--creativity::before {
+    background-image: url("../images/icons/COMPUTER%20_%20OK.png");
+  }
+
+  &__icon--seo::before {
+    background-image: url("../images/icons/BOOK%202.png");
+  }
+
+  &__icon--html::before {
+    background-image: url("../images/icons/HOME.png");
+  }
+
+  &__icon--digital::before {
+    background-image: url("../images/icons/IMAGE.png");
+  }
+
+  &__card-title {
+    font-size: 14px;
+    font-family: $font_msr;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  &__card-desc {
+    font-size: 15px;
+    font-family: $fnt_rbt;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: left;
+  }
+}
