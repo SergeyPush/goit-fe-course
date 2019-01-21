@@ -3,15 +3,17 @@
   background-image: url("../images/img/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   padding-top: 23px;
 }
 
 .site-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @extend %f-row;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
   align-items: baseline;
 
   &__logo {
@@ -24,20 +26,22 @@
 
   &__menu {
     .navigation-menu {
-      display: flex;
-      flex-direction: row;
+      @extend %f-row;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-between;
       width: 620px;
-      justify-content: space-between;
       align-items: center;
     }
   }
 }
 
 .navigation-menu {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  @extend %f-row;
   width: 620px;
-  justify-content: space-between;
   align-items: center;
 
   &__link {
@@ -58,9 +62,10 @@
   }
 
   .shopping-cart {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    @extend %f-row;
     width: 90px;
   }
 
@@ -94,7 +99,7 @@
   margin: 160px auto 0;
 
   &__over-title {
-    font-family: "Kaushan Script";
+    font-family: $font_ksh;
     color: $white;
     font-size: 4.5rem;
     text-align: center;
@@ -119,7 +124,7 @@
     font-size: 0.875rem;
     font-weight: 700;
     text-align: center;
-    line-height: 1.9rem;
+    line-height: 2.2rem;
     border: 3px solid $white;
     width: 160px;
     height: 40px;

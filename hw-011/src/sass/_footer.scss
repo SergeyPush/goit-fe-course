@@ -1,9 +1,7 @@
 .footer {
+  @extend %f-row;
   border-top: 1px solid #e5e5e5;
   height: 62px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -43,4 +41,5 @@
   height: 40px;
   background-color: #95e1d3;
   text-transform: uppercase;
+  cursor: pointer;
 }

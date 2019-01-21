@@ -4,8 +4,27 @@
 @import '_services.scss';
 @import '_team.scss';
 @import '_footer.scss';
+@import '_mixins.scss';
 
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/banner@2x.jpg");
+  }
 }

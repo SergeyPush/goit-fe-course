@@ -5,18 +5,15 @@
   &__over-title {
     text-align: center;
     margin: 0 0 11px;
-    padding: 0;
     font-size: 24px;
     font-family: $font_ksh;
     color: rgb(51, 51, 51);
     line-height: 1.2;
-    text-align: center;
   }
 
   &__title {
     text-align: center;
     margin-bottom: 40px;
-    padding: 0;
     font-size: 30px;
     font-family: $font_msr;
     color: rgb(51, 51, 51);
@@ -44,15 +41,12 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %f-row;
   }
 }
 
 .team-list__item {
   width: 380px;
-  /*    height: 540px;*/
   position: relative;
 
   &__photo {
@@ -63,27 +57,7 @@
   &__img {
     height: 470px;
     width: 100%;
-    transition: 0.2s -webkit-transform linear;
     transition: 0.2s transform linear;
-    transition: 0.2s transform linear, 0.2s -webkit-transform linear;
-  }
-
-  &__name {
-    font-size: 14px;
-    color: #333333;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__desc {
-    font-size: 15px;
-    line-height: 34px;
-    color: #999999;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
   }
 }
 
@@ -165,4 +139,35 @@
 
 .instagram {
   background-image: url("../imaes/icons/instagram.png");
+}
+
+.team-list {
+  &__name {
+    font-size: 14px;
+    color: #333333;
+    font-family: $font_msr;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 34px;
+    color: #999999;
+    font-family: $fnt_rbt;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+  }
+
+  &__photo {
+    height: 470px;
+    margin-bottom: 29px;
+  }
+
+  &__img {
+    height: 470px;
+    width: 100%;
+    transition: 0.2s transform linear;
+  }
 }

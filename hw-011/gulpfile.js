@@ -104,7 +104,7 @@ gulp.task('watch', () => {
 gulp.task('serve', ['styles'], () => {
   return server.init({
     server: './build',
-    browser: 'google chrome',
+    browser: 'chrome',
     notify: false,
     open: true,
     cors: true,
